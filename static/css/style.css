@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.attendance-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.date-selector {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.date-selector h2 {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.student-list {
+    display: grid;
+    gap: 10px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.student-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.student-card:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.student-info h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.student-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.attendance-buttons button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.present-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.present-btn:hover {
+    background-color: #45a049;
+}
+
+.absent-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.absent-btn:hover {
+    background-color: #da190b;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.student-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.attendance-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.present-btn, .absent-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.present-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.absent-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.marked-present {
+    background-color: #e8f5e9;
+}
+
+.marked-absent {
+    background-color: #ffebee;
+}
