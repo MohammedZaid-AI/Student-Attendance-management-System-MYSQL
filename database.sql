@@ -18,6 +18,22 @@ CREATE TABLE attendance (
     FOREIGN KEY (student_id) REFERENCES students(student_id)
 );
 
+CREATE TABLE teachers (
+    teacher_id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    last_login TIMESTAMP NULL
+);
+
+CREATE TABLE teacher_logins (
+    login_id INT PRIMARY KEY AUTO_INCREMENT,
+    teacher_id INT NOT NULL,
+    login_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id)
+);
+
 INSERT INTO students (first_name, last_name, class, parent_phone, parent_email) VALUES
 ('John', 'Doe', '10A', '1234567890', 'parent1@example.com'),
 ('Jane', 'Smith', '10A', '0987654321', 'parent2@example.com'),

@@ -168,3 +168,136 @@ tr:hover {
 .marked-absent {
     background-color: #ffebee;
 }
+
+
+/* Login page styles */
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.login-box h2 {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.login-box h1 {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-password img {
+    width: 24px;
+    opacity: 0.5;
+}
+
+.sign-up-btn {
+    width: 100%;
+    padding: 14px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.social-login {
+    text-align: center;
+}
+
+.social-login p {
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.social-btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 24px;
+    color: #666;
+}
+
+.login-link a {
+    color: #4285f4;
+    text-decoration: none;
+    font-weight: 500;
+}
